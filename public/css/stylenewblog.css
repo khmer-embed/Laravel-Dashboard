@@ -1,0 +1,16 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-family: ;
+	background-color:#DAE0E2 !important;
+}
+.za-logo,.pull-right{
+	margin-top: 50px !important;
+	font-size: 35px !important;
+}
+.za-logo  a{
+	font-size: 35px !important;
+}
+

@@ -1,0 +1,261 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: ubuntu;
+  font-weight: 300;
+  color: #323b44;
+  background: #f1f1f1;
+  overflow-x: hidden;
+}
+
+.header {
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  background: #4f5e70;
+}
+
+.header label {
+  font-size: 30px;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  line-height: 50px;
+}
+
+.main-header {
+  background-image: url(https://uxlthemes.com/demo/trusted/wp-content/themes/trusted/images/trusted-header.jpg );
+  background-color: #ced2d7;
+  background-repeat: no-repeat;
+  background-position: 65% 0;
+  background-size: cover;
+  background-attachment: scroll;
+  padding-top: 141px;
+  min-height: 413px;
+  transform: translateY(0px);
+}
+
+@media (max-width: 575.98px) {
+  .main-title {
+    padding: 7px 20px !important;
+    font-size: 15px !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .main-title,
+  h2 {
+    font-size: 18px !important;
+    padding: 7px 10px !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .main-title {
+    padding: 7px 20px !important;
+    width: 25% !important;
+  }
+}
+
+.main-title {
+  padding: 7px 10px;
+  width: 15%;
+  background: rgba(0, 188, 150, 0.8);
+  border-radius: 5px;
+  position: relative;
+  color: white;
+}
+
+.mian-title h1 {
+  font-size: 15px !important;
+}
+
+.faza {
+  margin-top: 5px;
+  padding: 7px;
+  background: #fff;
+  color: #4f5e70;
+  box-shadow: 0px 0px 0px 3px rgba(255, 255, 255, 0.45);
+  border-radius: 100%;
+  display: inline-block;
+  font-size: 26px;
+}
+
+.main-excerpt {
+  font-size: 16px;
+  width: 37%;
+  background: rgba(79, 94, 112, 0.8);
+  border-radius: 5px;
+}
+
+.main-excerpt p {
+  color: white;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+
+}
+.main-excerpt {}
+.wrapper-container {
+  padding-top: 0px;
+}
+.post-wraper {
+  background: #f1f1f1;
+}
+.hrstyle {
+  border: 2px solid #00bc96;
+  width: 25%;
+}
+.hrstyle2 {
+  border: 1px solid #00bc96;
+  width: 10%;
+}
+img {
+  width: 100% !important;
+  padding-bottom: 10px;
+}
+p {
+  font-weight: 200;
+  color: #4d4d4d;
+  padding: 0 0 15px;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+}
+h3 {
+  font-weight: 300;
+}
+.card-wrapper {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 25px;
+}
+.card-wrapper:hover {
+  transition: 0.5s;
+}
+.widget-area {
+  position: sticky;
+  top: 85px;
+}
+.search {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 4px;
+}
+h5 {
+  border-left: 3px solid #00bc96;
+  padding-left: 10px;
+  color: #323b45;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.recentposts {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 4px;
+}
+.recentposts ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.recentposts ul li {
+  margin-left: 15px;
+  padding: 6px 0;
+  border-bottom: 1px solid #f2f2f2;
+}
+.recentposts ul li a {
+  color: #000;
+  font-size: 14px;
+  font-weight: 200;
+}
+.recentposts a:hover {
+  color: #00bc96;
+}
+.archives {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 4px;
+}
+.archives p {
+  font-weight: 300;
+  padding-left: 15px;
+}
+footer .footer-1 {
+  background: #4f5e70;
+}
+.subfooter {
+  background: #4f5e70;
+  margin-top: 15px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.subfooter:hover {
+  transition: 0.5s;
+}
+.title {
+  color: white;
+}
+.title p {
+  font-weight: 300;
+  font-size: 14px;
+  color: white;
+}
+.title h6 {
+  padding-top: 18px !important;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+.title ul {}
+.title li {
+  list-style-type: none;
+}
+.title a {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  font-size: 14px;
+}
+.wrapperun {
+  background: #323b44 !important;
+}
+footer .footer-2 {
+  background: #323b44;
+}
+.row.footerunder {
+  background: #323b44;
+  line-height: 30px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 5px;
+}
+.footerunder p {
+  color: white;
+  font-size: 13px;
+}
+.nav-previous {
+  background: white;
+  line-height: 80px;
+  padding-left: 50px;
+  border-radius: 5px;
+}
+.nav-previous a {
+  text-decoration: none;
+  color: #00bc96;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
