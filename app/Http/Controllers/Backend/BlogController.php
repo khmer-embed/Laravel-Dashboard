@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Backend;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Product;
 
 class BlogController extends Controller
 {
@@ -13,8 +14,9 @@ class BlogController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        return view('backends.admin.product.index');
+    {   
+        $products = Product::all();
+        return view('backends.admin.product.index')->with('produts',$products);
     }
 
     /**
