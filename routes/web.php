@@ -94,3 +94,23 @@ Route::get('products/create','ProductController@create')->name('products.create'
 // });
 
 Route::get('/about','NewController@index');
+
+
+
+
+
+
+
+
+
+
+
+
+
+Route::get('/admin/Dashboard','Backend\DashboardController@index')->name('dashboard.index');
+
+Route::get('/admin/products','Backend\ProductController@index')->name('product.index');
+Route::get('/admin/productsEdit/{id}','Backend\ProductController@edit')->name('product.edit');
+
+Route::get('/admin/news','Backend\NewsController@index')->name('news.index');
+
