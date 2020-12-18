@@ -13,9 +13,9 @@
 
 Route::get('/', 'AdminController@index');
 
-Route::get('/login', function () {
-    return view('login');
-});
+// Route::get('/login', function () {
+//     return view('login');
+// });
 
 Route::get('/blog',function(){
 	return view ('blog');
@@ -25,45 +25,46 @@ Route::get('product',function(){
 	return view ('CRUD/product');
 });
 
-Route::get('/home',function(){
-	return view('static/home');
-});
+Route::get('home','HomeController@index');
 
 Route::get('manu', 'App\Http\Controllers\ManuController@create_data');
 
 
-
-Route::get('/index',function(){
-	return view('Dashboard/index');
+Route::get('Dashboard',function(){
+	return view('Dashboard/Dashboard');
 });
 
-Route::get('/component-blog-posts',function(){
-	return view('Dashboard/component-blog-posts');
+Route::get('posts',function(){
+	return view('Dashboard/posts');
 });
 
-Route::get('/errors',function(){
-	return view('Dashboard/errors');
+Route::get('newpost',function(){
+	return view('Dashboard/newpost');
 });
 
-Route::get('/form-components',function(){
-	return view('Dashboard/form-components');
+Route::get('form',function(){
+	return view('Dashboard/form');
 });
 
-Route::get('/add-new-post',function(){
-	return view('Dashboard/add-new-post');
-});
 
-Route::get('/tables',function(){
+Route::get('tables',function(){
 	return view('Dashboard/tables');
 });
 
-Route::get('/user-profile-lite',function(){
-	return view('Dashboard/user-profile-lite');
+Route::get('profile',function(){
+	return view('Dashboard/profile');
 });
 
+Route::get('errors',function(){
+	return view('Dashboard/errors');
+});
 
-Route::get('users', 'UserController@index');
-Route::get('posts/create', 'PostConroller@create');
+Route::get('new',function(){
+	return view('Dashboard/new');
+});
+
+// Route::get('users', 'UserController@index');
+// Route::get('posts/create', 'PostConroller@create');
 
 
 
@@ -72,3 +73,24 @@ Route::get('newblog',function(){
 });
 
 Route::resource('products','ProductController');
+
+Auth::routes();
+
+Route::get('show',function(){
+	return view ('Dashboard/show');
+});
+
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+
+Route::get('products','ProductController@index');
+Route::get('products/create','ProductController@create')->name('products.create');
+
+// Route::get('greeting', function () {
+//     return view('greeting', ['name' => 'James']);
+// });
+
+Route::get('/about','NewController@index');

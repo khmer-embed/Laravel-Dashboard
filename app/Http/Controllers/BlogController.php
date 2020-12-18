@@ -9,17 +9,17 @@ class HomeController extends Controller
 {
     public function index()
     {
-    	$search = (request() ->query('search')
-    	if ($search){ 
+    	// $search = (request() ->query('search');
+    	// if ($search){ 
     		
-    		{
-    			$posts = Post::where('title','LIKE',"%{$search}%") ->simplePaginate(3);
-    		}
-    		else {
-    			$posts = Post::simplePaginate(3)
-    		}
-    	}
-    	return view ('blog')
-    	->with('posts',$posts);
+    	// 	{
+    	// 		$posts = Post::where('title','LIKE',"%{$search}%") ->simplePaginate(3);
+    	// 	}
+    	// 	else {
+    	// 		$posts = Post::simplePaginate(3)
+    	// 	}
+    	// }
+    	// return view ('blog')
+    	// ->with('posts',$posts);
     }
 }

@@ -88,52 +88,64 @@
               </div>
               <input class="navbar-search form-control" type="text" placeholder="Search for something..." aria-label="Search"> </div>
           </form>
-          <div class="nav-wrapper">
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a class="nav-link " href="index.html">
-                  <i class="material-icons">edit</i>
-                  <span>Blog Dashboard</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="components-blog-posts.html">
-                  <i class="material-icons">vertical_split</i>
-                  <span>Blog Posts</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="add-new-post.html">
-                  <i class="material-icons">note_add</i>
-                  <span>Add New Post</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="form-components.html">
-                  <i class="material-icons">view_module</i>
-                  <span>Forms &amp; Components</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="tables.html">
-                  <i class="material-icons">table_chart</i>
-                  <span>Tables</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="user-profile-lite.html">
-                  <i class="material-icons">person</i>
-                  <span>User Profile</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="errors.html">
-                  <i class="material-icons">error</i>
-                  <span>Errors</span>
-                </a>
-              </li>
-            </ul>
-          </div>
+           <div class="nav-wrapper">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link " href="Dashboard">
+                    <i class="material-icons">edit</i>
+                    <span>Dashboard</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="new">
+                    <i class="material-icons">vertical_split</i>
+                    <span>News</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="posts">
+                    <i class="material-icons">vertical_split</i>
+                    <span>Blog Posts</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="newpost">
+                    <i class="material-icons">note_add</i>
+                    <span>Add New Post</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="form">
+                    <i class="material-icons">view_module</i>
+                    <span>Forms &amp; Components</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="tables">
+                    <i class="material-icons">table_chart</i>
+                    <span>Tables</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="profile">
+                    <i class="material-icons">person</i>
+                    <span>Users</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="profile">
+                    <i class="material-icons">person</i>
+                    <span>User Profile</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="errors">
+                    <i class="material-icons">error</i>
+                    <span>Errors</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
         </aside>
         <!-- End Main Sidebar -->
         <main class="main-content col-lg-10 col-md-9 col-sm-12 p-0 offset-lg-2 offset-md-3">

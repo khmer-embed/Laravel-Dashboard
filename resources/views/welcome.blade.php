@@ -64,12 +64,6 @@
         </style>
     </head>
     <body>
-        <div class="contanter">
-            @foreach($users as $user)
-                <h1>{{$user->name}}</h1>
-                <h2>{{ $user->email}}</h2>
-            @endforeach
-        </div>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">

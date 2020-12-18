@@ -1,18 +1,19 @@
 <?php
-
+  
 namespace App\Http\Controllers;
-
+  
 use App\Product;
 use Illuminate\Http\Request;
-
+  
 class ProductController extends Controller
 {
-    
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
+
+
     public function index()
     {
         $products = Product::latest()->paginate(5);
@@ -28,7 +29,8 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return view('products.create');
+        echo "hello";
+        // return view('products.create');
     }
   
     /**
@@ -41,6 +43,7 @@ class ProductController extends Controller
     {
         $request->validate([
             'name' => 'required',
+            'price' => 'required',
             'detail' => 'required',
         ]);
   
@@ -83,6 +86,7 @@ class ProductController extends Controller
     {
         $request->validate([
             'name' => 'required',
+            'price' => 'required',
             'detail' => 'required',
         ]);
   

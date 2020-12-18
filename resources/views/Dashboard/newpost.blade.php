@@ -12,7 +12,7 @@
     <link rel="stylesheet" id="main-stylesheet" data-version="1.1.0" href="styles/shards-dashboards.1.1.0.min.css">
     <link rel="stylesheet" href="styles/extras.1.1.0.min.css">
     <script async defer src="https://buttons.github.io/buttons.js"></script>
-  </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/quill/1.3.6/quill.snow.css"> </head>
   <body class="h-100">
     <div class="color-switcher animated">
       <h5>Accent Color</h5>
@@ -88,52 +88,64 @@
               </div>
               <input class="navbar-search form-control" type="text" placeholder="Search for something..." aria-label="Search"> </div>
           </form>
-          <div class="nav-wrapper">
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a class="nav-link " href="index.html">
-                  <i class="material-icons">edit</i>
-                  <span>Blog Dashboard</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="components-blog-posts.html">
-                  <i class="material-icons">vertical_split</i>
-                  <span>Blog Posts</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="add-new-post.html">
-                  <i class="material-icons">note_add</i>
-                  <span>Add New Post</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="form-components.html">
-                  <i class="material-icons">view_module</i>
-                  <span>Forms &amp; Components</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="tables.html">
-                  <i class="material-icons">table_chart</i>
-                  <span>Tables</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="user-profile-lite.html">
-                  <i class="material-icons">person</i>
-                  <span>User Profile</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="errors.html">
-                  <i class="material-icons">error</i>
-                  <span>Errors</span>
-                </a>
-              </li>
-            </ul>
-          </div>
+           <div class="nav-wrapper">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link " href="Dashboard">
+                    <i class="material-icons">edit</i>
+                    <span>Dashboard</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="new">
+                    <i class="material-icons">vertical_split</i>
+                    <span>News</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="posts">
+                    <i class="material-icons">vertical_split</i>
+                    <span>Blog Posts</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="newpost">
+                    <i class="material-icons">note_add</i>
+                    <span>Add New Post</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="form">
+                    <i class="material-icons">view_module</i>
+                    <span>Forms &amp; Components</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="tables">
+                    <i class="material-icons">table_chart</i>
+                    <span>Tables</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="profile">
+                    <i class="material-icons">person</i>
+                    <span>Users</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="profile">
+                    <i class="material-icons">person</i>
+                    <span>User Profile</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="errors">
+                    <i class="material-icons">error</i>
+                    <span>Errors</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
         </aside>
         <!-- End Main Sidebar -->
         <main class="main-content col-lg-10 col-md-9 col-sm-12 p-0 offset-lg-2 offset-md-3">
@@ -211,111 +223,114 @@
             </nav>
           </div>
           <!-- / .main-navbar -->
-          <div class="alert alert-success alert-dismissible fade show mb-0" role="alert">
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-              <span aria-hidden="true">×</span>
-            </button>
-            <i class="fa fa-check mx-2"></i>
-            <strong>Success!</strong> Your profile has been updated! </div>
           <div class="main-content-container container-fluid px-4">
             <!-- Page Header -->
             <div class="page-header row no-gutters py-4">
               <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
-                <span class="text-uppercase page-subtitle">Overview</span>
-                <h3 class="page-title">User Profile</h3>
+                <span class="text-uppercase page-subtitle">Blog Posts</span>
+                <h3 class="page-title">Add New Post</h3>
               </div>
             </div>
             <!-- End Page Header -->
-            <!-- Default Light Table -->
             <div class="row">
-              <div class="col-lg-4">
-                <div class="card card-small mb-4 pt-3">
-                  <div class="card-header border-bottom text-center">
-                    <div class="mb-3 mx-auto">
-                      <img class="rounded-circle" src="images/avatars/0.jpg" alt="User Avatar" width="110"> </div>
-                    <h4 class="mb-0">Sierra Brooks</h4>
-                    <span class="text-muted d-block mb-2">Project Manager</span>
-                    <button type="button" class="mb-2 btn btn-sm btn-pill btn-outline-primary mr-2">
-                      <i class="material-icons mr-1">person_add</i>Follow</button>
+              <div class="col-lg-9 col-md-12">
+                <!-- Add New Post Form -->
+                <div class="card card-small mb-3">
+                  <div class="card-body">
+                    <form class="add-new-post">
+                      <input class="form-control form-control-lg mb-3" type="text" placeholder="Your Post Title">
+                      <div id="editor-container" class="add-new-post__editor mb-1"></div>
+                    </form>
                   </div>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item px-4">
-                      <div class="progress-wrapper">
-                        <strong class="text-muted d-block mb-2">Workload</strong>
-                        <div class="progress progress-sm">
-                          <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100" style="width: 74%;">
-                            <span class="progress-value">74%</span>
+                </div>
+                <!-- / Add New Post Form -->
+              </div>
+              <div class="col-lg-3 col-md-12">
+                <!-- Post Overview -->
+                <div class='card card-small mb-3'>
+                  <div class="card-header border-bottom">
+                    <h6 class="m-0">Actions</h6>
+                  </div>
+                  <div class='card-body p-0'>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item p-3">
+                        <span class="d-flex mb-2">
+                          <i class="material-icons mr-1">flag</i>
+                          <strong class="mr-1">Status:</strong> Draft
+                          <a class="ml-auto" href="#">Edit</a>
+                        </span>
+                        <span class="d-flex mb-2">
+                          <i class="material-icons mr-1">visibility</i>
+                          <strong class="mr-1">Visibility:</strong>
+                          <strong class="text-success">Public</strong>
+                          <a class="ml-auto" href="#">Edit</a>
+                        </span>
+                        <span class="d-flex mb-2">
+                          <i class="material-icons mr-1">calendar_today</i>
+                          <strong class="mr-1">Schedule:</strong> Now
+                          <a class="ml-auto" href="#">Edit</a>
+                        </span>
+                        <span class="d-flex">
+                          <i class="material-icons mr-1">score</i>
+                          <strong class="mr-1">Readability:</strong>
+                          <strong class="text-warning">Ok</strong>
+                        </span>
+                      </li>
+                      <li class="list-group-item d-flex px-3">
+                        <button class="btn btn-sm btn-outline-accent">
+                          <i class="material-icons">save</i> Save Draft</button>
+                        <button class="btn btn-sm btn-accent ml-auto">
+                          <i class="material-icons">file_copy</i> Publish</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- / Post Overview -->
+                <!-- Post Overview -->
+                <div class='card card-small mb-3'>
+                  <div class="card-header border-bottom">
+                    <h6 class="m-0">Categories</h6>
+                  </div>
+                  <div class='card-body p-0'>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item px-3 pb-2">
+                        <div class="custom-control custom-checkbox mb-1">
+                          <input type="checkbox" class="custom-control-input" id="category1" checked>
+                          <label class="custom-control-label" for="category1">Uncategorized</label>
+                        </div>
+                        <div class="custom-control custom-checkbox mb-1">
+                          <input type="checkbox" class="custom-control-input" id="category2" checked>
+                          <label class="custom-control-label" for="category2">Design</label>
+                        </div>
+                        <div class="custom-control custom-checkbox mb-1">
+                          <input type="checkbox" class="custom-control-input" id="category3">
+                          <label class="custom-control-label" for="category3">Development</label>
+                        </div>
+                        <div class="custom-control custom-checkbox mb-1">
+                          <input type="checkbox" class="custom-control-input" id="category4">
+                          <label class="custom-control-label" for="category4">Writing</label>
+                        </div>
+                        <div class="custom-control custom-checkbox mb-1">
+                          <input type="checkbox" class="custom-control-input" id="category5">
+                          <label class="custom-control-label" for="category5">Books</label>
+                        </div>
+                      </li>
+                      <li class="list-group-item d-flex px-3">
+                        <div class="input-group">
+                          <input type="text" class="form-control" placeholder="New category" aria-label="Add new category" aria-describedby="basic-addon2">
+                          <div class="input-group-append">
+                            <button class="btn btn-white px-2" type="button">
+                              <i class="material-icons">add</i>
+                            </button>
                           </div>
                         </div>
-                      </div>
-                    </li>
-                    <li class="list-group-item p-4">
-                      <strong class="text-muted d-block mb-2">Description</strong>
-                      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eaque, quidem, commodi soluta qui quae minima obcaecati quod dolorum sint alias, possimus illum assumenda eligendi cumque?</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-8">
-                <div class="card card-small mb-4">
-                  <div class="card-header border-bottom">
-                    <h6 class="m-0">Account Details</h6>
+                      </li>
+                    </ul>
                   </div>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item p-3">
-                      <div class="row">
-                        <div class="col">
-                          <form>
-                            <div class="form-row">
-                              <div class="form-group col-md-6">
-                                <label for="feFirstName">First Name</label>
-                                <input type="text" class="form-control" id="feFirstName" placeholder="First Name" value="Sierra"> </div>
-                              <div class="form-group col-md-6">
-                                <label for="feLastName">Last Name</label>
-                                <input type="text" class="form-control" id="feLastName" placeholder="Last Name" value="Brooks"> </div>
-                            </div>
-                            <div class="form-row">
-                              <div class="form-group col-md-6">
-                                <label for="feEmailAddress">Email</label>
-                                <input type="email" class="form-control" id="feEmailAddress" placeholder="Email" value="sierra@example.com"> </div>
-                              <div class="form-group col-md-6">
-                                <label for="fePassword">Password</label>
-                                <input type="password" class="form-control" id="fePassword" placeholder="Password"> </div>
-                            </div>
-                            <div class="form-group">
-                              <label for="feInputAddress">Address</label>
-                              <input type="text" class="form-control" id="feInputAddress" placeholder="1234 Main St"> </div>
-                            <div class="form-row">
-                              <div class="form-group col-md-6">
-                                <label for="feInputCity">City</label>
-                                <input type="text" class="form-control" id="feInputCity"> </div>
-                              <div class="form-group col-md-4">
-                                <label for="feInputState">State</label>
-                                <select id="feInputState" class="form-control">
-                                  <option selected>Choose...</option>
-                                  <option>...</option>
-                                </select>
-                              </div>
-                              <div class="form-group col-md-2">
-                                <label for="inputZip">Zip</label>
-                                <input type="text" class="form-control" id="inputZip"> </div>
-                            </div>
-                            <div class="form-row">
-                              <div class="form-group col-md-12">
-                                <label for="feDescription">Description</label>
-                                <textarea class="form-control" name="feDescription" rows="5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eaque, quidem, commodi soluta qui quae minima obcaecati quod dolorum sint alias, possimus illum assumenda eligendi cumque?</textarea>
-                              </div>
-                            </div>
-                            <button type="submit" class="btn btn-accent">Update Account</button>
-                          </form>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
                 </div>
+                <!-- / Post Overview -->
               </div>
             </div>
-            <!-- End Default Light Table -->
           </div>
           <footer class="main-footer d-flex p-2 px-3 bg-white border-top">
             <ul class="nav">
@@ -367,5 +382,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Sharrre/2.0.1/jquery.sharrre.min.js"></script>
     <script src="scripts/extras.1.1.0.min.js"></script>
     <script src="scripts/shards-dashboards.1.1.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/quill/1.3.6/quill.min.js"></script>
+    <script src="scripts/app/app-blog-new-post.1.1.0.js"></script>
   </body>
 </html>
