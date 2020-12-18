@@ -21,7 +21,6 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Pricing</a>
             </li>
-  
       </nav>
     </div>
   </body>

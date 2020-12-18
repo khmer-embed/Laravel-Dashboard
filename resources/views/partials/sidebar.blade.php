@@ -48,7 +48,7 @@
 				<div class="nav-wrapper">
 					<ul class="nav flex-column">
 						<li class="nav-item">
-							<a class="nav-link active" href="Dashboard" href="{{route('dashboard.index')}}">
+							<a class="nav-link " href="Dashboard" href="{{route('dashboard.index')}}">
 								<i class="material-icons">edit</i>
 								<span>Dashboard</span>
 							</a>
@@ -199,7 +199,11 @@
 							<h3 class="page-title">Blog Overview</h3>
 						</div>
 					</div>
-					@yield('pageContent')
+					<div class="card card-small card-post card-post--1">
+						<div class="col-lg-12">
+							@yield('pageContent')
+						</div>
+					</div>
 				</div>
 								
 				<footer class="main-footer d-flex p-2 px-3 bg-white border-top">

@@ -16,8 +16,11 @@ class ProductController extends Controller
 	 */
 	public function index()
 	{
+		// $products = Product::all();
+		// return view('backends.admin.product.index')->with('products',$products);
 		$products = Product::all();
-		return view('backends.admin.product.index')->with('products',$products);
+  
+        return view('backends.admin.product.index',compact('products'));
 	}
 
 	/**
@@ -27,7 +30,7 @@ class ProductController extends Controller
 	 */
 	public function create()
 	{
-		//
+		return view ('backends.admin.product.create');
 	}
 
 	/**
@@ -36,9 +39,15 @@ class ProductController extends Controller
 	 * @param  \Illuminate\Http\Request  $request
 	 * @return \Illuminate\Http\Response
 	 */
-	public function store(Request $request)
-	{
-		//
+	public function store(Request $request){
+		$request->validate([
+            'name' => 'required',
+            'price' => 'required',
+            'detail' => 'required',
+        ]);
+        Product::create($request->all());
+
+        return redirect()->route('product.index')->with('success','Product created successfully.');
 	}
 
 	/**
@@ -49,7 +58,8 @@ class ProductController extends Controller
 	 */
 	public function show($id)
 	{
-		//
+		$product = Product::find($id);
+		return view('backends.admin.product.show',compact('product'));
 	}
 
 	/**
@@ -60,7 +70,8 @@ class ProductController extends Controller
 	 */
 	public function edit($id)
 	{
-		//
+		$product = Product::find($id);
+		return view('backends.admin.product.edit',compact('product'));
 	}
 
 	/**
@@ -72,7 +83,17 @@ class ProductController extends Controller
 	 */
 	public function update(Request $request, $id)
 	{
-		//
+		$product = Product::find($id);
+		$request->validate([
+            'name' => 'required',
+            'price' => 'required',
+            'detail' => 'required',
+        ]);
+  		// $product= Product::update($request->all());
+        $product->update($request->all());
+  
+        return redirect()->route('product.index')
+                        ->with('success','Product updated successfully');
 	}
 
 	/**
@@ -83,6 +104,17 @@ class ProductController extends Controller
 	 */
 	public function destroy($id)
 	{
-		//
+		$product = Product::find($id);
+		if(!empty($product)){
+			$product->delete();
+        	return redirect()->route('product.index')
+                        ->with('success','Products deleted successfully');
+
+        }else{
+        	// ddaa('No data');
+			return redirect()->route('product.index')
+			                ->with('danger','Products deleting failed!');
+
+		}
 	}
 }

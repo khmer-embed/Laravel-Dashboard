@@ -63,16 +63,9 @@ Route::get('new',function(){
 	return view('Dashboard/new');
 });
 
-// Route::get('users', 'UserController@index');
-// Route::get('posts/create', 'PostConroller@create');
-
-
-
 Route::get('newblog',function(){
 	return view ('newblog');
 });
-
-Route::resource('products','ProductController');
 
 Auth::routes();
 
@@ -86,31 +79,23 @@ Route::get('/', function () {
 });
 
 
-Route::get('products','ProductController@index');
-Route::get('products/create','ProductController@create')->name('products.create');
-
-// Route::get('greeting', function () {
-//     return view('greeting', ['name' => 'James']);
-// });
-
-Route::get('/about','NewController@index');
-
-
-
-
-
-
-
-
-
-
-
-
+//backend
 
 Route::get('/admin/Dashboard','Backend\DashboardController@index')->name('dashboard.index');
 
 Route::get('/admin/products','Backend\ProductController@index')->name('product.index');
-Route::get('/admin/productsEdit/{id}','Backend\ProductController@edit')->name('product.edit');
+
+Route::get('/admin/products/create','Backend\ProductController@create')->name('product.create');
+
+Route::post('/admin/products/store','Backend\ProductController@store')->name('product.store');
+
+Route::get('/admin/products/show/{id}','Backend\ProductController@show')->name('product.show');
+
+Route::get('/admin/products/destroy/{id}','Backend\ProductController@destroy')->name('product.destroy');
+
+Route::get('/admin/products/edit/{id}','Backend\ProductController@edit')->name('product.edit');
+
+Route::put('/admin/products/update/{id}','Backend\ProductController@update')->name('product.update');
 
 Route::get('/admin/news','Backend\NewsController@index')->name('news.index');
 
